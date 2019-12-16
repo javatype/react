@@ -2,7 +2,10 @@ import React from "react";
 import axios from "axios";
 
 class Form extends React.Component {
-	state = { userName: '' };
+	 constructor(props){
+        super(props);
+        this.state = {userName: 'alok'};
+    }
 	handleSubmit = async (event) => {
         console.log('calling');
   	event.preventDefault();
